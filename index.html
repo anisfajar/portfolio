@@ -4,767 +4,567 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Mufa Digital Solutions</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Mufa Digital Solutions | Modern Software Innovation</title>
 
   <!-- Favicons -->
   <link href="assets/img/logo_mufa_digital_solutions.png" rel="icon">
-  <link href="assets/img/logo_mufa_digital_solutions.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    .message-box {
-      padding: 0.75rem;
-      border-radius: 0.5rem;
-      margin-top: 1rem;
-      text-align: center;
-      font-weight: 600;
-      display: none;
-    }
-
-    .loading {
-      background-color: #e0f2f1;
-      /* Teal 100 */
-      color: #0d9488;
-      /* Teal 600 */
-    }
-
-    .error-message {
-      background-color: #fee2e2;
-      /* Red 100 */
-      color: #dc2626;
-      /* Red 600 */
-    }
-
-    .sent-message {
-      background-color: #d1fae5;
-      /* Green 100 */
-      color: #047857;
-      /* Green 600 */
-    }
-  </style>
 </head>
 
-<body class="index-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div
-      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo_mufa_digital_solutions.png" alt=""> -->
-        <h1 class="sitename">Mufa Digital Solutions</h1>
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="logo">
+      <a href="#"
+        style="display: flex; align-items: center; gap: 12px; font-weight: 800; font-family: var(--font-heading); color: var(--text-heading); font-size: 1.1rem;">
+        <div
+          style="background: var(--primary); color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <i class="bi bi-code-slash" style="font-size: 1.1rem;"></i>
+        </div>
+        <span>MUFA Digital Solutions</span>
       </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <a href="#contact" class="btn-main" style="padding: 8px 20px; font-size: 13px;">Let's Talk</a>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </div>
+  </nav>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-modern">
+    <div class="hero-badge" data-aos="fade-down">Available for New Projects & Collaborations</div>
+    <h1 data-aos="fade-up" data-aos-delay="100">Elevating Brands through<br><span style="color: var(--primary);">Digital
+        Innovation</span></h1>
+    <p data-aos="fade-up" data-aos-delay="200">Kami mengubah ide kompleks menjadi solusi digital yang elegan,
+      fungsional, dan berorientasi pada hasil nyata untuk bisnis Anda.</p>
+    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+      <a href="#portfolio" class="btn-main">Lihat Project</a>
+      <a href="#services" class="btn-outline">Eksplor Layanan</a>
+    </div>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+    <!-- Trust Badges -->
+    <div class="hero-trust-badges">
+      <div class="trust-item">
+        <i class="bi bi-lightning-charge-fill"></i>
+        <span>Modern Technology</span>
+      </div>
+      <div class="trust-item">
+        <i class="bi bi-heart-fill"></i>
+        <span>User Centric Design</span>
+      </div>
+      <div class="trust-item">
+        <i class="bi bi-stars"></i>
+        <span>Clean Code</span>
+      </div>
+    </div>
+
+    <!-- Scroll Down -->
+    <a href="#services"
+      style="position: absolute; bottom: 40px; color: var(--text-muted); animation: bounce 2s infinite;">
+      <i class="bi bi-mouse" style="font-size: 1.5rem;"></i>
+    </a>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="section-container">
+
+    <!-- Services & Bento Grid -->
+    <div id="services" class="bento-grid">
+
+      <!-- Intro Card -->
+      <div class="bento-item" style="grid-column: span 2; background: var(--primary); color: white;" data-aos="fade-up">
+        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">What We Do.</h2>
+        <p style="opacity: 0.9;">Kami menawarkan spektrum penuh solusi digital, mulai dari desain antarmuka yang memukau
+          hingga arsitektur backend yang kuat.</p>
+      </div>
+
+      <!-- Service 1 -->
+      <div class="bento-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-palette"
+          style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+        <h3>UI/UX Design</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">Desain intuitif yang berfokus pada
+          pengalaman pengguna terbaik.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bento-item" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-code-slash"
+          style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+        <h3>Web Dev</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">Aplikasi web modern dengan performa
+          tinggi dan skalabel.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bento-item" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-phone"
+          style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+        <h3>Mobile App</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">Solusi mobile native dan hybrid untuk
+          semua platform.</p>
+      </div>
+
+      <!-- About Card -->
+      <div id="about" class="bento-item" style="grid-column: span 2; grid-row: span 2; padding: 0;" data-aos="fade-up">
+        <img src="assets/img/about-clean.png" alt="About"
+          style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px; transition: transform 0.8s ease;">
+        <div
+          style="position: absolute; bottom: 0; left: 0; right: 0; padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; border-radius: 0 0 24px 24px;">
+          <h3 style="color: white; margin-bottom: 10px;">Creative Solutions</h3>
+          <p style="font-size: 0.9rem; opacity: 0.8;">Fokus pada detail dan inovasi untuk menghadirkan pengalaman
+            digital terbaik bagi setiap proyek.</p>
+        </div>
+      </div>
+
+      <!-- Performance Card -->
+      <div class="bento-item"
+        style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: #f8fafc;"
+        data-aos="fade-up">
+        <i class="bi bi-rocket-takeoff" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+        <p style="font-weight: 700; color: var(--text-heading); font-size: 1.2rem;">High Performance</p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); text-align: center; margin-top: 8px;">Kecepatan &
+          efisiensi di setiap baris kode.</p>
+      </div>
+
+      <!-- Why Choose Us 1 -->
+      <div class="bento-item" data-aos="fade-up" data-aos-delay="400">
+        <h4 style="color: var(--primary); margin-bottom: 10px;">Fast Delivery</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Kami menjamin pengiriman proyek tepat waktu tanpa
+          kompromi kualitas.</p>
+      </div>
+
+      <!-- Why Choose Us 2 -->
+      <div class="bento-item" data-aos="fade-up" data-aos-delay="500">
+        <h4 style="color: var(--primary); margin-bottom: 10px;">Mobile Friendly</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Setiap karya dirancang agar tampil sempurna di semua
+          perangkat mobile.</p>
+      </div>
+
+      <!-- Contact Mini Card -->
+      <div class="bento-item"
+        style="grid-column: span 4; background: #f1f5f9; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px;"
+        data-aos="fade-up">
+        <h4 style="margin-bottom: 15px; font-size: 1.5rem;">Siap Memulai Proyek Anda?</h4>
+        <p style="margin-bottom: 25px; color: var(--text-muted); max-width: 500px;">Hubungi kami hari ini untuk
+          konsultasi gratis dan mulai wujudkan ide digital Anda.</p>
+        <a href="#contact"
+          style="background: var(--primary); color: white; padding: 12px 30px; border-radius: 30px; font-weight: 700; display: flex; align-items: center; gap: 10px; transition: var(--transition-smooth);">
+          Hubungi Kami <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
 
     </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 content-col" data-aos="fade-up">
-            <div class="content">
-              <br>
-              <div class="main-heading">
-                <h1>SOFTWARE <br>INNOVATION</h1>
-              </div>
-
-              <div class="divider"></div>
-
-              <div class="description">
-                <p>Jelajahi strategi inovatif untuk pengembangan perangkat lunak yang berdampak. Kami mengubah ide
-                  menjadi realitas digital yang canggih, memastikan sistem Anda menonjol di pasar yang padat. Tim kami
-                  memanfaatkan teknik terdepan untuk menghadirkan solusi luar biasa yang beresonansi dengan pengguna
-                  Anda.</p>
-              </div>
-
-              <div class="cta-button">
-                <a href="#services" class="btn">
-                  <span>EXPLORE SERVICES</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5" data-aos="zoom-out">
-            <div class="visual-content">
-              <div class="fluid-shape">
-                <img src="assets/img/abstract/abstract-1.webp" alt="Abstract Fluid Shape" class="fluid-img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <div><span>Learn More</span> <span class="description-title">About Us</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-image position-relative">
-              <img src="assets/img/about-us.png" class="img-fluid rounded-4 shadow-sm" alt="About Image" loading="lazy">
-              <div class="experience-badge">
-                <span class="years">5+</span>
-                <span class="text">Years of Experience</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <h2>Driving Growth with Digital Excellence.</h2>
-              <p class="lead">Leveraging deep technical insight and strategic problem-solving, we equip organizations
-                with systems designed to scale and dominate dynamic market landscapes.</p>
-              <p>Through a blend of sophisticated analytics and creative problem-solving, we empower organizations to
-                thrive in rapidly evolving markets.</p>
-
-              <div class="row g-4 mt-3">
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle-fill"></i>
-                    <h5>Dedicated Team Support</h5>
-                    <p>Our elite developers deploy deep technical expertise and personalized methodologies, ensuring
-                      every project translates into powerful, measurable business growth..</p>
-                  </div>
-                </div>
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="feature-item">
-                    <i class="bi bi-lightbulb-fill"></i>
-                    <h5>Forward-Thinking Approach</h5>
-                    <p>We deploy cutting-edge development methodologies to architect distinctive strategies that ensure
-                      scalable and sustainable success.</p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <div><span>Check Our</span> <span class="description-title">Services</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <a href="javascript:;"
-                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="javascript:;">
-                  UI/UX <span>Design</span>
-                </a>
-              </h3>
-              <p>
-                We are the architects behind intuitive and impactful digital experiences. We focus on crafting
-                compelling interfaces (UI) and mapping seamless user journeys (UX), ensuring every interaction converts
-                into measurable loyalty and business growth.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="javascript:;"
-                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="javascript:;">
-                  Mobile <span>App</span>
-                </a>
-              </h3>
-              <p>
-                We specialize in engineering intuitive mobile flows that redefine performance and usability on small
-                screens. Our UI/UX solutions minimize taps, eliminate friction, and ensure blazing-fast user journeys
-                from launch to conversion.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <a href="javascript:;"
-                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="javascript:;">
-                  Web Development <span>App</span>
-                </a>
-              </h3>
-              <p>
-                We build the bedrock for your digital future. We specialize in high-performance web development,
-                architecting custom solutions designed for massive scalability and sub-second load times across all
-                devices.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Steps Section -->
-    <section id="steps" class="steps section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Steps</h2>
-        <div><span>How we</span> <span class="description-title">Work</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="steps-wrapper">
-
-          <div class="step-item" data-aos="fade-right" data-aos-delay="200">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-lightbulb"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 01</span>
-                <h3>Initial Consultation</h3>
-                <p>We initiate with a deep dive into your strategic landscape and core business challenges. Our
-                  architects translate these insights into a precisely tailored digital roadmap, ensuring alignment with
-                  your long-term vision..</p>
-              </div>
-            </div>
-          </div><!-- End Step Item -->
-
-          <div class="step-item" data-aos="fade-left" data-aos-delay="300">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-gear"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 02</span>
-                <h3>Planning &amp; Strategy</h3>
-                <p>We transform strategic insights from our consultation into robust project blueprints. This includes
-                  crafting definitive, phase-gated roadmaps complete with clear milestones and prioritized deliverables
-                  for maximum project transparency.</p>
-              </div>
-            </div>
-          </div><!-- End Step Item -->
-
-          <div class="step-item" data-aos="fade-right" data-aos-delay="400">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-bar-chart"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 03</span>
-                <h3>Development Phase</h3>
-                <p>We deploy the established roadmap using rigorous Agile methodologies, focusing on rapid, high-quality
-                  code delivery. Our clients benefit from continuous integration and real-time updates, guaranteeing
-                  total transparency throughout the execution phase.</p>
-              </div>
-            </div>
-          </div><!-- End Step Item -->
-
-          <div class="step-item" data-aos="fade-left" data-aos-delay="500">
-            <div class="step-content">
-              <div class="step-icon">
-                <i class="bi bi-check2-circle"></i>
-              </div>
-              <div class="step-info">
-                <span class="step-number">Step 04</span>
-                <h3>Launch &amp; Support</h3>
-                <p>Our final phase includes expert deployment and comprehensive long-term support. We establish
-                  strategic performance dashboards, allowing us to actively monitor the system and implement rapid,
-                  data-driven adjustments for maximum efficiency.</p>
-              </div>
-            </div>
-          </div><!-- End Step Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Steps Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
-
-          <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
-            <span class="badge text-uppercase mb-2">Don't Miss!</span>
-            <h2>Launch Your Digital Transformation Now.</h2>
-            <p class="my-4">We deploy market-leading innovation and proprietary strategies to fuel your rapid expansion.
-              Join the growing roster of clients who trust us to architect their definitive competitive advantage.</p>
-          </div>
-
-          <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
-            <img src="assets/img/launch-digital.png" alt="Digital Platform" class="img-fluid rounded-4">
-            <div class="floating-card">
-              <div class="card-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="decoration">
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <div><span>Check Our</span> <span class="description-title">Portfolio</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/1.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development App</div>
-                      <h3 class="entry-title">Keuangan Yayasan Sekolah</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/1.png" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: Keuangan Yayasan Sekolah; description: Sistem Keluar Masuk Keuangan Yayasan Sekolah.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="javascript:;">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/2.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development App</div>
-                      <h3 class="entry-title">Sistem Monitoring Santri Sekolah</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/2.png" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: Sistem Monitoring Santri Sekolah; description: Sistem Monitoring Santri Keluar Masuk Pondok.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="javascript:;">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/3.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development App</div>
-                      <h3 class="entry-title">Sistem PPDB Sekolah</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/3.png" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: Sistem PPDB Sekolah; description: Sistem Pendaftaran PPDB Sekolah.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="javascript:;">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/4.png" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development App</div>
-                      <h3 class="entry-title">Kasir POS</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/4.png" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: Kasir POS; description: Sistem Penjualan / POS Kasir.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="javascript:;">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/5.jpeg" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development App</div>
-                      <h3 class="entry-title">Sistem Monitoring Santri Mobile</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/5.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-development"
-                          data-glightbox="title: Sistem Monitoring Santri Mobile; description: Sistem Monitoring Santri Pondok Berbasis Mobile.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="javascript:;">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
-
+    <div id="portfolio" style="margin-top: 100px;">
+      <div style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 14px;">Recent
+            Work</span>
+          <h2 style="font-size: 2.5rem; margin-top: 5px;">Selected Projects</h2>
         </div>
-
+        <a href="#" class="btn-outline">View All Works</a>
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <div class="bento-grid">
+        <!-- Project 1 -->
+        <div class="bento-item portfolio-card" style="grid-column: span 2; grid-row: span 2;" data-aos="zoom-in">
+          <img src="assets/img/portfolio/1.png" alt="Project 1">
+          <div>
+            <div class="portfolio-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Education</span>
+            </div>
+            <h3>Keuangan Yayasan Sekolah</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Sistem manajemen keuangan
+              terintegrasi untuk institusi pendidikan.</p>
+          </div>
+        </div>
 
-    <!-- Team Section -->
+        <!-- Project 2 -->
+        <div class="bento-item portfolio-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/img/portfolio/2.png" alt="Project 2">
+          <div>
+            <div class="portfolio-tags">
+              <span class="tag">Monitoring</span>
+            </div>
+            <h4 style="font-size: 1rem;">Monitoring Santri</h4>
+          </div>
+        </div>
 
+        <!-- Project 3 -->
+        <div class="bento-item portfolio-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/portfolio/3.png" alt="Project 3">
+          <div>
+            <div class="portfolio-tags">
+              <span class="tag">System</span>
+            </div>
+            <h4 style="font-size: 1rem;">PPDB Sekolah</h4>
+          </div>
+        </div>
 
-    <!-- Pricing Section -->
-
-    <!-- Faq Section -->
-    <section class="faq-9 faq section" id="faq">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5" data-aos="fade-up">
-            <h2 class="faq-title">Have a question? Check out the FAQ</h2>
-            <p class="faq-description">
-              Curious about the roles, processes, or technology stack our team uses?
-              Find the answers to the most common questions regarding our Software Developer team below.
-            </p>
-            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
-              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
-                  fill="currentColor"></path>
-              </svg>
+        <!-- Project 4 -->
+        <div class="bento-item portfolio-card" style="grid-column: span 2;" data-aos="zoom-in" data-aos-delay="300">
+          <div style="display: flex; gap: 20px; align-items: center;">
+            <img src="assets/img/portfolio/4.png" alt="Project 4"
+              style="width: 200px; height: 150px; margin-bottom: 0;">
+            <div>
+              <div class="portfolio-tags">
+                <span class="tag">POS</span>
+                <span class="tag">Retail</span>
+              </div>
+              <h3>Kasir POS System</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Sistem penjualan modern untuk efisiensi bisnis.
+              </p>
             </div>
           </div>
-
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>What are Software Developer Services?</h3>
-                <div class="faq-content">
-                  <p>Software Developer Services (or Software Development Services) are professional offerings that
-                    cover the entire lifecycle of custom software—from planning, design, coding, testing, to
-                    implementation and maintenance—tailored to your specific business requirements.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>What is the difference between custom software and off-the-shelf software?</h3>
-                <div class="faq-content">
-                  <p>Off-the-shelf software is a general solution sold commercially (e.g., Microsoft Office). Custom
-                    software is an application built from scratch specifically to meet your unique workflows and
-                    business challenges, giving you full control over features and scalability.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>How does your software development process work?</h3>
-                <div class="faq-content">
-                  <p>We typically follow this cycle: 1. Discovery & Planning (gathering requirements), 2. Design (UX/UI
-                    and Architecture), 3. Development (coding and testing), 4. Deployment (launch), and 5. Maintenance &
-                    Support (post-launch upkeep).</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>How long does it take to build an application?</h3>
-                <div class="faq-content">
-                  <p>The duration varies significantly based on complexity, feature count, and data availability. A
-                    small project might take 2–3 months, while complex enterprise systems can take 6 months or more. We
-                    provide an accurate estimate after the initial Discovery phase.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Are there any hidden costs besides the development fee?</h3>
-                <div class="faq-content">
-                  <p>No. We are committed to transparency. Additional costs may only arise due to scope changes (Scope
-                    Creep) after the contract is signed, which we will communicate and agree upon beforehand through a
-                    formal Change Request.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Who owns the source code of the developed software?</h3>
-                <div class="faq-content">
-                  <p>Under our standard contract, you (the client) retain full rights and ownership of all source code
-                    upon final payment and project handover.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-          </div>
-
         </div>
       </div>
-    </section><!-- /Faq Section -->
+    </div>
+
+    <!-- Our Process Section -->
+    <div id="process" style="margin-top: 100px;">
+      <div style="text-align: center; margin-bottom: 50px;">
+        <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 14px;">How We
+          Work</span>
+        <h2 style="font-size: 2.5rem; margin-top: 5px;">Our Development Process</h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="step-card" data-aos="fade-up">
+          <div class="step-number">01</div>
+          <h4>Discovery</h4>
+          <p>Memahami visi, tujuan, dan kebutuhan bisnis Anda secara mendalam.</p>
+        </div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">02</div>
+          <h4>Planning</h4>
+          <p>Menyusun strategi, arsitektur, dan desain prototipe yang solutif.</p>
+        </div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">03</div>
+          <h4>Development</h4>
+          <p>Proses coding dengan standar kualitas tinggi dan pengujian ketat.</p>
+        </div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">04</div>
+          <h4>Launch</h4>
+          <p>Implementasi sistem dan dukungan berkelanjutan setelah rilis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faq" style="margin-top: 100px;">
+      <div style="text-align: center; margin-bottom: 50px;">
+        <span
+          style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 14px;">Questions</span>
+        <h2 style="font-size: 2.5rem; margin-top: 5px;">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item" data-aos="fade-up">
+          <div class="faq-question">
+            Berapa lama waktu pengerjaan satu proyek?
+            <i class="bi bi-plus"></i>
+          </div>
+          <div class="faq-answer">
+            Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Biasanya berkisar antara 4-12 minggu untuk
+            proyek menengah.
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-question">
+            Apakah ada dukungan setelah proyek selesai?
+            <i class="bi bi-plus"></i>
+          </div>
+          <div class="faq-answer">
+            Ya, kami memberikan dukungan teknis dan maintenance gratis selama 3 bulan pertama setelah peluncuran.
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-question">
+            Berapa biaya untuk jasa pembuatan aplikasi?
+            <i class="bi bi-plus"></i>
+          </div>
+          <div class="faq-answer">
+            Biaya disesuaikan dengan fitur dan kebutuhan spesifik Anda. Hubungi kami untuk mendapatkan penawaran harga
+            yang transparan.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <div id="contact" style="margin-top: 100px;">
+      <div class="bento-grid">
+        <div class="bento-item" style="grid-column: span 3; padding: 60px;" data-aos="fade-up">
+          <h2 style="font-size: 3rem; margin-bottom: 20px;">Let's work together.</h2>
+          <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px;">Punya ide besar atau pertanyaan?
+            Kami siap membantu mewujudkannya.</p>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Let's</span> <span class="description-title">Connect</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <!-- Contact Info Boxes -->
-        <div class="row gy-4 mb-5">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="info-content">
-                <h4>Our Address</h4>
-                <p>Dk. Nglau RT 02 RW 05 Nalumsari, Jepara, Jawa Tengah</p>
-              </div>
+          <form id="whatsappForm" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <input type="text" id="name" placeholder="Your Name" class="btn-outline"
+              style="border-radius: 12px; padding: 15px; width: 100%;" required>
+            <input type="email" id="email" placeholder="Your Email" class="btn-outline"
+              style="border-radius: 12px; padding: 15px; width: 100%;" required>
+            <input type="text" id="subject" placeholder="Subject" class="btn-outline"
+              style="grid-column: span 2; border-radius: 12px; padding: 15px; width: 100%;" required>
+            <textarea id="message" placeholder="How can we help?" class="btn-outline"
+              style="grid-column: span 2; border-radius: 12px; padding: 15px; width: 100%; height: 150px;"
+              required></textarea>
+            <div style="grid-column: span 2; display: flex; gap: 15px;">
+              <button type="submit" class="btn-main"
+                style="flex: 1; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <i class="bi bi-whatsapp"></i> Kirim ke WhatsApp
+              </button>
             </div>
+          </form>
+
+          <div id="loadingMessage" class="status-msg loading">
+            <i class="bi bi-arrow-repeat spin" style="display: inline-block; animation: rotate 2s linear infinite;"></i>
+            Mengalihkan ke WhatsApp...
           </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="info-content">
-                <h4>Email Address</h4>
-                <p>anisfajarp@gmail.com</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-headset"></i>
-              </div>
-              <div class="info-content">
-                <h4>Hours of Operation</h4>
-                <p>Sunday-Fri: 8 AM - 4 PM</p>
-                <p>Saturday: 8 AM - 4 PM</p>
-              </div>
-            </div>
+          <div id="sentMessage" class="status-msg success">
+            <i class="bi bi-check-circle-fill"></i>
+            Berhasil! Membuka aplikasi WhatsApp...
           </div>
         </div>
 
+        <div class="bento-item" style="background: var(--text-heading); color: white;" data-aos="fade-up"
+          data-aos-delay="200">
+          <h4 style="color: white; margin-bottom: 20px;">Contact Info</h4>
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div>
+              <p style="font-size: 0.8rem; opacity: 0.6;">EMAIL</p>
+              <p>anisfajarp@gmail.com</p>
+            </div>
+            <div>
+              <p style="font-size: 0.8rem; opacity: 0.6;">ADDRESS</p>
+              <p>Jepara, Jawa Tengah</p>
+            </div>
+            <div>
+              <p style="font-size: 0.8rem; opacity: 0.6;">PHONE / WA</p>
+              <p>+62 851-5844-6898</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Google Maps (Full Width) -->
-      <div class="map-section" data-aos="fade-up" data-aos-delay="200">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15873.31343714083!2d110.66981975!3d-6.68060855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c4cc9a2d3609%3A0x28af700142b78111!2sNglau%2C%20Nalumsari%2C%20Jepara%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1700661234567!5m2!1sen!2sid"
-          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </section><!-- /Contact Section -->
+    </div>
 
   </main>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <footer style="padding: 60px 20px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+    <p>&copy; Mufa Digital Solutions. All rights reserved.</p>
+  </footer>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- Floating Chatbot -->
+  <div class="chatbot-wrapper">
+    <div id="chatWindow" class="chat-window">
+      <div class="chat-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div
+            style="background: white; color: var(--primary); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-robot"></i>
+          </div>
+          <span style="font-weight: 600;">MUFA Assistant</span>
+        </div>
+        <i class="bi bi-x-lg" id="closeChat" style="cursor: pointer;"></i>
+      </div>
+      <div id="chatBody" class="chat-body">
+        <div class="bot-msg">Halo! Ada pertanyaan khusus? Pilih topik di bawah:</div>
+        <div class="chat-questions" id="initialQuestions">
+          <button class="chat-q-btn" onclick="askBot('custom')">Bisa request fitur custom?</button>
+          <button class="chat-q-btn" onclick="askBot('aman')">Bagaimana keamanan datanya?</button>
+          <button class="chat-q-btn" onclick="askBot('tech')">Teknologi apa yang dipakai?</button>
+          <button class="chat-q-btn" onclick="askBot('revisi')">Apakah desain bisa direvisi?</button>
+          <button class="chat-q-btn" onclick="askBot('payment')">Bisa integrasi Payment Gateway?</button>
+          <button class="chat-q-btn" onclick="askBot('maintenance')">Bagaimana dengan pemeliharaan?</button>
+        </div>
+      </div>
+    </div>
+    <div id="chatbotBtn" class="chatbot-btn">
+      <i class="bi bi-chat-heart-fill"></i>
+    </div>
+  </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Vendor JS -->
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script>
-    // Inisialisasi Lucide icons
-    lucide.createIcons();
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
 
+    // WhatsApp Form Logic
     const form = document.getElementById('whatsappForm');
     const loadingMsg = document.getElementById('loadingMessage');
-    const errorMsg = document.getElementById('errorMessage');
     const sentMsg = document.getElementById('sentMessage');
-    // Nomor WhatsApp tujuan
     const waNumber = '6285158446898';
 
-    function showMessage(element, hideAfter = false) {
-      // Sembunyikan semua pesan status
-      [loadingMsg, errorMsg, sentMsg].forEach(el => el.style.display = 'none');
-      // Tampilkan elemen yang diinginkan
-      element.style.display = 'block';
-      if (hideAfter) {
-        setTimeout(() => element.style.display = 'none', 5000);
-      }
-    }
-
-    // Fungsi utama untuk menangani pengiriman dan redirect ke WhatsApp
-    function handleSubmission(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Tampilkan pesan loading
-      showMessage(loadingMsg);
-
-      // Ambil nilai dari input form
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
 
-      // 1. Format pesan yang akan dikirim ke WhatsApp
-      const waMessage =
-        `*Pesan Kontak Baru (dari Website)*\n\n` +
-        `*Nama:* ${name}\n` +
-        `*Email:* ${email || '(Tidak diisi)'}\n` +
-        `*Subjek:* ${subject}\n\n` +
-        `*Isi Pesan:*\n${message}`;
+      loadingMsg.style.display = 'flex';
+      const text = `*Pesan Kontak Baru*\n\n*Nama:* ${name}\n*Email:* ${email}\n*Subjek:* ${subject}\n\n*Pesan:*\n${message}`;
 
-      // 2. Encode URI Component
-      const encodedMessage = encodeURIComponent(waMessage);
-
-      // 3. Buat URL WhatsApp
-      const waURL = `https://wa.me/${waNumber}?text=${encodedMessage}`;
-
-      // Simulasikan sedikit jeda sebelum redirect untuk menampilkan 'Berhasil'
       setTimeout(() => {
-        showMessage(sentMsg);
-        // 4. Redirect browser ke URL WhatsApp
+        loadingMsg.style.display = 'none';
+        sentMsg.style.display = 'flex';
+
+        const waURL = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
         window.location.href = waURL;
       }, 800);
-    }
+    });
 
-    // Pasang event listener pada form
-    form.addEventListener('submit', handleSubmission);
+    // FAQ Accordion Logic
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('active');
+      });
+    });
 
+    // Chatbot Logic
+    const chatbotWrapper = document.querySelector('.chatbot-wrapper');
+    const chatbotBtn = document.getElementById('chatbotBtn');
+    const chatWindow = document.getElementById('chatWindow');
+    const closeChat = document.getElementById('closeChat');
+    const chatBody = document.getElementById('chatBody');
+
+    // Hover Logic
+    chatbotWrapper.addEventListener('mouseenter', () => {
+      chatWindow.classList.add('active');
+    });
+
+    chatbotWrapper.addEventListener('mouseleave', () => {
+      // Delay sedikit agar tidak langsung tertutup jika tidak sengaja keluar area sebentar
+      setTimeout(() => {
+        if (!chatbotWrapper.matches(':hover')) {
+          chatWindow.classList.remove('active');
+        }
+      }, 300);
+    });
+
+    const answers = {
+      custom: "Tentu! Kami spesialis membangun fitur custom unik sesuai kebutuhan spesifik bisnis Anda.",
+      aman: "Kami menerapkan standar enkripsi terbaru dan praktik keamanan terbaik untuk melindungi data Anda.",
+      tech: "Kami menggunakan stack modern seperti React, Node.js, Laravel, dan sistem Cloud terpercaya.",
+      revisi: "Ya, kami memberikan jatah revisi desain untuk memastikan hasil akhirnya sesuai ekspektasi Anda.",
+      payment: "Tentu! Kami berpengalaman mengintegrasikan payment gateway seperti Midtrans, Xendit, dan Stripe.",
+      maintenance: "Kami menyediakan layanan pemeliharaan rutin untuk memastikan aplikasi Anda selalu optimal dan aman."
+    };
+
+    const questionsText = {
+      custom: "Bisa request fitur custom?",
+      aman: "Bagaimana keamanan datanya?",
+      tech: "Teknologi apa yang dipakai?",
+      revisi: "Apakah desain bisa direvisi?",
+      payment: "Bisa integrasi Payment Gateway?",
+      maintenance: "Bagaimana dengan pemeliharaan?"
+    };
+
+    window.askBot = function (key) {
+      // Remove current questions from view
+      const currentQuestions = document.querySelectorAll('.chat-questions');
+      currentQuestions.forEach(q => q.style.display = 'none');
+
+      // Add User Message
+      const userDiv = document.createElement('div');
+      userDiv.className = 'user-msg';
+      userDiv.textContent = questionsText[key];
+      chatBody.appendChild(userDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+
+      // Add Typing Indicator
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'bot-msg typing-indicator';
+      typingDiv.innerHTML = '<span></span><span></span><span></span>';
+      chatBody.appendChild(typingDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+
+      // Add Bot Answer after delay
+      setTimeout(() => {
+        chatBody.removeChild(typingDiv);
+        const botDiv = document.createElement('div');
+        botDiv.className = 'bot-msg';
+        botDiv.textContent = answers[key];
+        chatBody.appendChild(botDiv);
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+        // Re-show questions after 3 seconds delay
+        setTimeout(() => {
+          const newQuestions = document.getElementById('initialQuestions').cloneNode(true);
+          newQuestions.id = ''; // Remove ID from clone
+          newQuestions.style.display = 'flex';
+          chatBody.appendChild(newQuestions);
+          chatBody.scrollTop = chatBody.scrollHeight;
+        }, 5000);
+      }, 1500);
+    };
+
+    // Mobile Nav Toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileNavToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileNavToggle.classList.toggle('bi-list');
+      mobileNavToggle.classList.toggle('bi-x');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileNavToggle.classList.add('bi-list');
+        mobileNavToggle.classList.remove('bi-x');
+      });
+    });
+
+    // Simple scroll reveal for nav
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.floating-nav');
+      if (window.scrollY > 50) {
+        nav.style.background = 'rgba(255, 255, 255, 0.95)';
+        if (window.innerWidth > 992) nav.style.top = '15px';
+      } else {
+        nav.style.background = 'rgba(255, 255, 255, 0.8)';
+        if (window.innerWidth > 992) nav.style.top = '30px';
+      }
+    });
   </script>
 
 </body>
