@@ -55,8 +55,17 @@
   <!-- Hero Section -->
   <section id="hero" class="hero-modern">
     <div class="hero-badge" data-aos="fade-down">Available for New Projects & Collaborations</div>
-    <h1 data-aos="fade-up" data-aos-delay="100">Elevating Brands through<br><span style="color: var(--primary);">Digital
-        Innovation</span></h1>
+    <h1 data-aos="fade-up" data-aos-delay="100">
+      Elevating Brands through
+      <span class="flip-container">
+        <span class="flip-wrapper" id="flipWrapper">
+          <span class="flip-word">Digital Innovation</span>
+          <span class="flip-word">Modern Solutions</span>
+          <span class="flip-word">Creative Designs</span>
+          <span class="flip-word">Future Technology</span>
+        </span>
+      </span>
+    </h1>
     <p data-aos="fade-up" data-aos-delay="200">Kami mengubah ide kompleks menjadi solusi digital yang elegan,
       fungsional, dan berorientasi pada hasil nyata untuk bisnis Anda.</p>
     <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
@@ -592,6 +601,34 @@
     }
     window.addEventListener('load', navbarlinksActive);
     document.addEventListener('scroll', navbarlinksActive);
+
+    /**
+     * Hero Text Flip Logic (Infinite Loop)
+     */
+    const flipWrapper = document.getElementById('flipWrapper');
+    const originalWords = flipWrapper.querySelectorAll('.flip-word');
+    const firstWordClone = originalWords[0].cloneNode(true);
+    flipWrapper.appendChild(firstWordClone);
+
+    const allWords = flipWrapper.querySelectorAll('.flip-word');
+    let currentWordIndex = 0;
+    const wordHeight = 1.2; // matching CSS height (em)
+
+    function rotateWords() {
+      currentWordIndex++;
+      flipWrapper.style.transition = 'transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1)';
+      flipWrapper.style.transform = `translateY(-${currentWordIndex * wordHeight}em)`;
+
+      if (currentWordIndex === allWords.length - 1) {
+        setTimeout(() => {
+          flipWrapper.style.transition = 'none';
+          currentWordIndex = 0;
+          flipWrapper.style.transform = `translateY(0)`;
+        }, 600); // match transition duration
+      }
+    }
+
+    setInterval(rotateWords, 3000);
   </script>
 
 </body>
