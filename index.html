@@ -478,6 +478,12 @@
       }, 300);
     });
 
+    // Close Button Logic
+    closeChat.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent trigger wrapper events if any
+      chatWindow.classList.remove('active');
+    });
+
     const answers = {
       custom: "Tentu! Kami spesialis membangun fitur custom unik sesuai kebutuhan spesifik bisnis Anda.",
       aman: "Kami menerapkan standar enkripsi terbaru dan praktik keamanan terbaik untuk melindungi data Anda.",
@@ -565,6 +571,27 @@
         if (window.innerWidth > 992) nav.style.top = '30px';
       }
     });
+
+    /**
+     * Navbar links active state on scroll
+     */
+    const navbarlinks = document.querySelectorAll('.nav-links a');
+
+    function navbarlinksActive() {
+      let position = window.scrollY + 200;
+      navbarlinks.forEach(navbarlink => {
+        if (!navbarlink.hash) return;
+        let section = document.querySelector(navbarlink.hash);
+        if (!section) return;
+        if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+          navbarlink.classList.add('active');
+        } else {
+          navbarlink.classList.remove('active');
+        }
+      });
+    }
+    window.addEventListener('load', navbarlinksActive);
+    document.addEventListener('scroll', navbarlinksActive);
   </script>
 
 </body>

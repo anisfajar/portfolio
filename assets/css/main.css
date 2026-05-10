@@ -18,10 +18,19 @@
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+section, 
+#hero, #services, #portfolio, #process, #faq, #contact {
+  scroll-margin-top: 100px;
 }
 
 body {
@@ -638,6 +647,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#closeChat {
+  transition: var(--transition-smooth);
+  opacity: 0.8;
+}
+
+#closeChat:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .chat-body {
