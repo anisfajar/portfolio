@@ -187,15 +187,149 @@
 
     </div>
 
+    <!-- Tech Stack Section -->
+    <div id="tech-stack" class="tech-stack-section" data-aos="fade-up">
+      <div class="tech-stack-header">
+        <span class="tech-label">Powering Innovation</span>
+        <h3>Our Core Technologies</h3>
+      </div>
+      <div class="tech-stack-container">
+        <div class="tech-badge laravel">
+          <div class="tech-icon">
+            <img src="https://cdn.simpleicons.org/laravel" alt="Laravel">
+          </div>
+          <span>Laravel</span>
+        </div>
+        <div class="tech-badge react">
+          <div class="tech-icon">
+            <img src="https://cdn.simpleicons.org/react" alt="React JS">
+          </div>
+          <span>React JS</span>
+        </div>
+        <div class="tech-badge node">
+          <div class="tech-icon">
+            <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node JS">
+          </div>
+          <span>Node JS</span>
+        </div>
+        <div class="tech-badge vue">
+          <div class="tech-icon">
+            <img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue JS">
+          </div>
+          <span>Vue JS</span>
+        </div>
+        <div class="tech-badge ci">
+          <div class="tech-icon">
+            <img src="https://cdn.simpleicons.org/codeigniter" alt="CodeIgniter">
+          </div>
+          <span>CodeIgniter</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="section-container" style="padding-top: 50px; padding-bottom: 50px;">
+      <div style="text-align: center; margin-bottom: 60px;" data-aos="fade-up">
+        <span class="tech-label">Our Expertise</span>
+        <h2 style="font-size: 2.5rem;">Solutions We Provide</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 15px auto 0;">Kami menghadirkan solusi spesifik
+          untuk berbagai kebutuhan bisnis dan instansi Anda.</p>
+      </div>
+
+      <div class="solutions-slider-wrapper" data-aos="fade-up">
+        <!-- Floating Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn prev" id="prevBtn">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="slider-btn next" id="nextBtn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="solutions-slider">
+          <!-- School System -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <h3>Sistem Sekolah</h3>
+            <p>Manajemen akademik, keuangan yayasan, dan absensi terpadu untuk efisiensi pendidikan.</p>
+          </div>
+
+          <!-- School Profile -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h3>Website Profile Sekolah</h3>
+            <p>Tampilan profesional untuk sekolah Anda agar lebih dikenal dan mudah diakses oleh publik.</p>
+          </div>
+
+          <!-- Company Profile -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h3>Website Profile Company</h3>
+            <p>Bangun kredibilitas bisnis Anda dengan website profil perusahaan yang modern dan elegan.</p>
+          </div>
+
+          <!-- E-Commerce -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-cart-dash"></i>
+            </div>
+            <h3>E-Commerce Solution</h3>
+            <p>Platform toko online kustom dengan integrasi pembayaran otomatis dan manajemen stok.</p>
+          </div>
+
+          <!-- Financial System -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h3>Sistem Keuangan</h3>
+            <p>Aplikasi akuntansi dan manajemen arus kas untuk transparansi finansial yang akurat.</p>
+          </div>
+
+          <!-- HRIS & Payroll -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3>HRIS & Penggajian</h3>
+            <p>Solusi manajemen karyawan, absensi, dan perhitungan gaji (payroll) secara otomatis dan akurat.</p>
+          </div>
+
+          <!-- Inventory System -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <i class="bi bi-box-seam"></i>
+            </div>
+            <h3>Sistem Inventory</h3>
+            <p>Manajemen stok barang, pergudangan, dan pelacakan inventaris secara real-time dan sistematis.</p>
+          </div>
+        </div>
+
+        <!-- Slider Navigation Hints -->
+        <div class="slider-nav">
+          <div class="scroll-hint">
+            <i class="bi bi-mouse"></i> Scroll horizontal atau klik tombol navigasi
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Section -->
-    <div id="portfolio" style="margin-top: 100px;">
+    <div id="portfolio" style="margin-top: 50px;">
       <div style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
         <div>
           <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 14px;">Recent
             Work</span>
           <h2 style="font-size: 2.5rem; margin-top: 5px;">Selected Projects</h2>
         </div>
-        <a href="#" class="btn-outline">View All Works</a>
+        <!-- <a href="#" class="btn-outline">View All Works</a> -->
       </div>
 
       <div class="bento-grid">
@@ -629,6 +763,98 @@
     }
 
     setInterval(rotateWords, 3000);
+
+    // Robust Infinite Slider Logic
+    const slider = document.querySelector('.solutions-slider');
+    const originalCards = Array.from(slider.children);
+
+    // Clone cards twice to have 3 sets (Total buffer)
+    for (let i = 0; i < 2; i++) {
+      originalCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        slider.appendChild(clone);
+      });
+    }
+
+    // Set initial position to the middle set
+    window.addEventListener('load', () => {
+      const cardWidth = slider.querySelector('.solution-card').offsetWidth + 24;
+      slider.scrollLeft = cardWidth * originalCards.length;
+    });
+
+    // Navigation Buttons
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (prevBtn && nextBtn && slider) {
+      const getCardWidth = () => slider.querySelector('.solution-card').offsetWidth + 24;
+
+      nextBtn.addEventListener('click', () => {
+        const cardWidth = getCardWidth();
+        slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        const cardWidth = getCardWidth();
+        slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      });
+
+      // Seamless Jump Logic with Check Interval
+      slider.addEventListener('scroll', () => {
+        const scrollWidth = slider.scrollWidth;
+        const scrollLeft = slider.scrollLeft;
+        const clientWidth = slider.clientWidth;
+        const oneSetWidth = (scrollWidth / 3);
+
+        // If reaching the third set, jump to second set
+        if (scrollLeft >= oneSetWidth * 2) {
+          slider.style.scrollBehavior = 'auto';
+          slider.scrollLeft = scrollLeft - oneSetWidth;
+          slider.style.scrollBehavior = 'smooth';
+        }
+        // If reaching the first set, jump to second set
+        else if (scrollLeft <= 0) {
+          slider.style.scrollBehavior = 'auto';
+          slider.scrollLeft = oneSetWidth;
+          slider.style.scrollBehavior = 'smooth';
+        }
+      });
+    }
+
+    // Drag to Scroll Logic
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    if (slider) {
+      slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.style.scrollBehavior = 'auto'; // Disable smooth scroll during drag
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+
+      slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        slider.style.scrollBehavior = 'smooth';
+      });
+
+      slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        slider.style.scrollBehavior = 'smooth';
+      });
+
+      slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
   </script>
 
 </body>
